@@ -1,0 +1,15 @@
+## To Compile via CMake ##
+
+1. Open Terminal
+2. Navigate to directory with Makefile
+3. Type the cmd 'mingw32-make'
+
+
+## CMake Executable Commands ##
+
+default:
+	g++ main.cpp -o Game.exe -O2 -Wall -Wno-missing-braces -I include/ -L lib/ -lraylib -lopengl32 -lgdi32 -lwinmm
+
+
+default:
+	g++ src/main.cpp src/Functions.cpp -Wall -o Game.exe -static -O2 -Wno-missing-braces -I include/ -L lib/ -lraylib -lopengl32 -lgdi32 -lwinmm
